@@ -8,9 +8,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.lfsenior.learn</groupId>
-    <artifactId>springcloud-config-server-git</artifactId>
+    <artifactId>springcloud-config-client-git</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>springcloud-config-server-git</name>
+    <name>springcloud-config-client-git</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
