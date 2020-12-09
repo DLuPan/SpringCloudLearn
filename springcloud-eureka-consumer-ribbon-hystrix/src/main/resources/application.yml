@@ -9,4 +9,4 @@ eureka:
 
 spring:
   application:
-    name: eureka-consumer-ribbon
+    name: eureka-consumer-ribbon-hystrix
