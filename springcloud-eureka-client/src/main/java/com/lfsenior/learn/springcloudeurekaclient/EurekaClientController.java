@@ -1,5 +1,6 @@
 package com.lfsenior.learn.springcloudeurekaclient;
 
+import org.apache.commons.lang.math.RandomUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -20,7 +21,10 @@ public class EurekaClientController {
     String port;
 
     @RequestMapping("/hi")
-    public String home(@RequestParam(value = "name", defaultValue = "lfsenior") String name) {
+    public String home(@RequestParam(value = "name", defaultValue = "lfsenior") String name) throws InterruptedException {
+        if (RandomUtils.nextInt(10) > 6) {
+            Thread.sleep(50000);
+        }
         return "hi " + name + " ,i am from port:" + port;
     }
 }
